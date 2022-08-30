@@ -15,34 +15,34 @@ O câncer de pele é o tipo de câncer de maior incidência no Brasil, correspon
 #### Parte de Deep Learning 
 
 • Ambiente de desenvolvimento [Google Colaboratory](https://colab.research.google.com/)
-	Sistema Operacional Linux Ubuntu versão 18.04
-	Dois Processadores Intel(R) Xeon(R) CPU @ 2.20GHz
-	Placa de Vídeo NVIDEA Tesla T4
-	13GB de Memória RAM
+	• Sistema Operacional Linux Ubuntu versão 18.04
+	• Dois Processadores Intel(R) Xeon(R) CPU @ 2.20GHz
+	• Placa de Vídeo NVIDEA Tesla T4
+	• 13GB de Memória RAM
 • Linguagem de Programação [Python](https://www.python.org/) versão 3.7.13
-	Biblioteca [Numpy](https://numpy.org/) versão 1.21.6 utilizada para cálculos matemáticos
-	Biblioteca [Pandas](https://pandas.pydata.org/) versão 1.3.5 utilizada para manipulação e visualização de listas e tabelas
-	Biblioteca [MatplotLib](https://matplotlib.org/) versão 3.2.2 utilizada para plotar imagens e gráficos
-	Biblioteca [Glob](https://docs.python.org/3/library/glob.html) utilizada para o acesso e manipulação de pastas e arquivos no sistema operacional
-	Biblioteca [Pillow](https://pillow.readthedocs.io/en/stable/) versão 7.1.2 utilizada para manipulação vetorial das imagens
-	Biblioteca [Pytorch](https://pytorch.org/) versão 1.11.0 e todas as suas dependências, utilizada para o trabalho com Deep Learning
-	Biblioteca [Scikit-learn](https://scikit-learn.org/stable/) versão 1.1 utilizado para a separação dos dados em treino e validação  
+	• Biblioteca [Numpy](https://numpy.org/) versão 1.21.6 utilizada para cálculos matemáticos
+	• Biblioteca [Pandas](https://pandas.pydata.org/) versão 1.3.5 utilizada para manipulação e visualização de listas e tabelas
+	• Biblioteca [MatplotLib](https://matplotlib.org/) versão 3.2.2 utilizada para plotar imagens e gráficos
+	• Biblioteca [Glob](https://docs.python.org/3/library/glob.html) utilizada para o acesso e manipulação de pastas e arquivos no sistema operacional
+	• Biblioteca [Pillow](https://pillow.readthedocs.io/en/stable/) versão 7.1.2 utilizada para manipulação vetorial das imagens
+	• Biblioteca [Pytorch](https://pytorch.org/) versão 1.11.0 e todas as suas dependências, utilizada para o trabalho com Deep Learning
+	• Biblioteca [Scikit-learn](https://scikit-learn.org/stable/) versão 1.1 utilizado para a separação dos dados em treino e validação  
 
 #### Parte de Depoy do Software 
 
 • Ferramenta utilizada para desenvolvimento notebook Dell G7 7588
-	Sistema Operacional Windows 11
-	Processador Intel i7-8750H
-	Placa de Vídeo NVIDEA GTX 1050 TI
-	8GB de Memória RAM DDR4
+	• Sistema Operacional Windows 11
+	• Processador Intel i7-8750H
+	• Placa de Vídeo NVIDEA GTX 1050 TI
+	• 8GB de Memória RAM DDR4
 • Linguagem de Programação Python versão 3.7.13
-	Biblioteca [JSON](https://docs.python.org/3/library/json.html) versão 1.6.1 formato utilizado para a troca de dados através de API REST
-	Biblioteca [Requests](https://requests.readthedocs.io/en/latest/) versão 2.9.1 utilizada para realização de requisições entre servidor e cliente
-	Biblioteca [Pillow](https://pillow.readthedocs.io/en/stable/) versão 7.1.2 utilizada para manipulação vetorial das imagens
-	Biblioteca [Pytorch](https://pytorch.org/) versão 1.11.0 utilizada para o carregamento do modelo de CNN treinado para classificação
-	Biblioteca [Flask](https://flask.palletsprojects.com/en/2.2.x/) versão 2.1.2 utilizada para a criação da API REST
-	Biblioteca [Kivy](https://kivy.org/) 2.1.0 utilizada para a criação do aplicativo Android
-	Biblioteca [Kivymd](https://kivymd.readthedocs.io/en/latest/) 0.104.2 utilizada para a modelagem gráfica do aplicativo Android
+	• Biblioteca [JSON](https://docs.python.org/3/library/json.html) versão 1.6.1 formato utilizado para a troca de dados através de API REST
+	• Biblioteca [Requests](https://requests.readthedocs.io/en/latest/) versão 2.9.1 utilizada para realização de requisições entre servidor e cliente
+	• Biblioteca [Pillow](https://pillow.readthedocs.io/en/stable/) versão 7.1.2 utilizada para manipulação vetorial das imagens
+	• Biblioteca [Pytorch](https://pytorch.org/) versão 1.11.0 utilizada para o carregamento do modelo de CNN treinado para classificação
+	• Biblioteca [Flask](https://flask.palletsprojects.com/en/2.2.x/) versão 2.1.2 utilizada para a criação da API REST
+	• Biblioteca [Kivy](https://kivy.org/) 2.1.0 utilizada para a criação do aplicativo Android
+	• Biblioteca [Kivymd](https://kivymd.readthedocs.io/en/latest/) 0.104.2 utilizada para a modelagem gráfica do aplicativo Android
 • Ambiente de Desenvolvimento [Pycharm](https://www.jetbrains.com/pt-br/pycharm/) Community Edition 2021.3.3  
 
 
@@ -118,5 +118,5 @@ O Material final apresentado para a obtenção do grau de Bacharel em Engenharia
 
 :clapper: [Apresentação do Trabalho de Conclusão](https://youtu.be/NPBdcE4Zmck)
 
-:books: Parte escrita do Trabalho de Conclusão
+:books: [Parte escrita do Trabalho de Conclusão](https://github.com/felipemoraissoares/SkinCancerClassification/tree/main/Trabalho%20de%20Conclus%C3%A3o%20do%20Curso)
 

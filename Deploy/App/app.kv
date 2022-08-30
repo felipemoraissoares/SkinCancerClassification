@@ -1,0 +1,193 @@
+GerenciadorJanela:
+    JanelaLogin:
+    JanelaCarregaImagem:
+    JanelaClassifica:
+    JanelaEscolherImagem:
+
+<JanelaLogin>:
+    name: "janelalogin"
+
+    MDCard:
+        size_hint: None, None
+        size: 400,500
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: "vertical"
+
+        MDToolbar:
+            title: '[size=17]Classificador de Lesões de Pele[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.95}
+            right_action_items: [['close', lambda x: app.fechar()]]
+            md_bg_color: app.theme_cls.primary_dark
+
+        Image:
+            source: 'lupa.png'#'logo-cei-128.png'
+            allow_stretch: True
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: 0.5, 0.5
+
+        MDTextFieldRound:
+            id: user_name
+            hint_text : "usuário"
+            icon_right: "account"
+            size_hint_x: None
+            width: 200
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+
+        MDTextFieldRound:
+            id: user_password
+            hint_text : "senha"
+            icon_right: "eye-off"
+            size_hint_x: None
+            width: 200
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+            password: True
+
+        MDRoundFlatButton:
+            text: "Entrar"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_press: app.root.current = "janelacarregaimagem"
+
+        MDLabel:
+            text: "Desenvolvido por Felipe Soares, Engenharia de Computação UFSM"
+            font_size: 10
+            halign: "center"
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+
+<JanelaCarregaImagem>:
+    name: "janelacarregaimagem"
+
+    MDCard:
+        size_hint: None, None
+        size: 400,500
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: "vertical"
+
+        MDToolbar:
+            title: '[size=17]Classificador de Lesões de Pele[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.95}
+            right_action_items: [['close', lambda x: app.fechar()]]
+            md_bg_color: app.theme_cls.primary_dark
+
+        Image:
+            source: 'vazia.png'
+            allow_stretch: True
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: 0.5, 0.5
+
+        MDRoundFlatButton:
+            text: "Capturar Imagem"
+            icon_right: "camera"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_press: app.root.current = "janelaclassifica"
+
+        MDRoundFlatButton:
+            text: "Carregar Imagem"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_press: app.root.current = "janelaescolherimagem"
+
+###########################
+######ESCOLHER IMAGEM######
+###########################
+<JanelaEscolherImagem>:
+    id: my_widget
+    name: "janelaescolherimagem"
+
+    MDCard:
+        size_hint: None, None
+        size: 400,500
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: "vertical"
+
+        MDToolbar:
+            title: '[size=17]Classificador de Lesões de Pele[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.95}
+            right_action_items: [['close', lambda x: app.fechar()]]
+            md_bg_color: app.theme_cls.primary_dark
+
+        FileChooserListView:
+			id: filechooser
+			on_selection: root.file_fire_select(*args)
+
+        MDLabel:
+            id: path
+            text: ""
+            halign: "center"
+            font_size: 12
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+
+        MDRoundFlatButton:
+            text: "Carregar Imagem"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_release: app.carregar_img()
+            #on_press: app.root.current = "janelaclassifica"
+
+
+<JanelaClassifica>:
+    name: "janelaclassifica"
+
+    MDCard:
+        size_hint: None, None
+        size: 400,500
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: "vertical"
+
+        MDToolbar:
+            title: '[size=17]Classificador de Lesões de Pele[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.95}
+            right_action_items: [['close', lambda x: app.fechar()]]
+            md_bg_color: app.theme_cls.primary_dark
+
+        Image:
+            id: my_image
+			source: ""
+            allow_stretch: True
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: 0.5, 0.5
+
+        MDRoundFlatButton:
+            text: "Classificar"
+            font_size: 12
+            pos_hint: {"center_x": 0.5}
+            on_press: app.classificar()
+
+        MDLabel:
+            text: "  "
+            font_size: 6
+            halign: "center"
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 4
+
+        MDLabel:
+            text: "MELANOMA"
+            font_size: 35
+            halign: "center"
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+

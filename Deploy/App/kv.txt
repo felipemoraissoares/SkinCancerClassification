@@ -1,0 +1,34 @@
+FloatLayout:
+
+        MDToolbar:
+            title: '[size=17][u]Classificador de Lesões de Pele[/size][u]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.95}
+            right_action_items: [['close', lambda x: app.fechar()]]
+            md_bg_color: app.theme_cls.primary_dark
+
+        Image:
+            source: 'ISIC_0024516.jpg'#'logo-cei-128.png'
+            allow_stretch: True
+            pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            size_hint: 0.5, 0.5
+
+        MDRaisedButton:
+            text: '[size=17]Carregar Imagem[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+            size_hint: 0.7, 0.1
+            md_bg_color: app.theme_cls.primary_dark
+            on_press:  root.classificar()
+
+        MDRaisedButton:
+            text: '[size=17]Classificar[/size]'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+            size_hint: 0.7, 0.1
+            md_bg_color: app.theme_cls.primary_dark
+
+        MDLabel:
+            id: resposta
+            text: 'Melanoma'
+            halign: 'center'
+            font_size: 60
+            font_style: 'H3'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.15}
